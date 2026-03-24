@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vanshika | Freelancer</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
 <style>
 * {
   margin: 0;
@@ -18,7 +20,6 @@ body {
   color: white;
 }
 
-/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -43,18 +44,16 @@ nav a:hover {
   color: #3b82f6;
 }
 
-/* Hero */
 .hero {
   height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 20px;
 }
 
 .hero-text h1 {
-  font-size: 50px;
+  font-size: 48px;
 }
 
 .hero-text span {
@@ -62,9 +61,8 @@ nav a:hover {
 }
 
 .hero-text p {
-  margin: 20px 0;
+  margin: 15px 0;
   color: #94a3b8;
-  font-size: 18px;
 }
 
 .highlight {
@@ -72,7 +70,6 @@ nav a:hover {
   font-weight: bold;
 }
 
-/* Button */
 .btn {
   display: inline-block;
   padding: 12px 25px;
@@ -89,19 +86,17 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-/* Sections */
 section {
   padding: 60px 80px;
 }
 
 h2 {
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 28px;
   border-left: 5px solid #3b82f6;
   padding-left: 10px;
 }
 
-/* Projects */
 .projects {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
@@ -120,7 +115,6 @@ h2 {
   background: rgba(59,130,246,0.2);
 }
 
-/* Skills */
 .skills span {
   display: inline-block;
   background: #1e293b;
@@ -129,19 +123,12 @@ h2 {
   border-radius: 20px;
 }
 
-/* Contact */
-.contact p {
-  margin: 10px 0;
-}
-
-/* Footer */
 footer {
   text-align: center;
   padding: 20px;
   color: #94a3b8;
 }
 
-/* Responsive */
 @media(max-width: 768px){
   section {
     padding: 40px 20px;
@@ -155,9 +142,9 @@ footer {
 <nav>
   <h2>Vanshika</h2>
   <div>
-    <a href="#">Home</a>
     <a href="#about">About</a>
-    <a href="#projects">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#services">Services</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
@@ -165,58 +152,74 @@ footer {
 <div class="hero">
   <div class="hero-text">
     <h1>Hi, I'm <span>Vanshika</span> 👋</h1>
-    <p>Multi-Skilled Freelancer | Web Developer | AI Enthusiast | Content Creator</p>
+
+    <!-- Typing Animation -->
+    <p id="typing"></p>
+
+    <p class="highlight">
+      💡 Combining Web Development + AI to build smart solutions
+    </p>
 
     <p class="highlight">🚀 1900+ Followers on LinkedIn</p>
 
-    
-
-    <a href="https://www.linkedin.com/in/vanshika-bansal-47350431a" target="_blank" class="btn">
-      Connect on LinkedIn
-    </a>
+    <a href="https://www.linkedin.com/in/vanshika-bansal-47350431a" target="_blank" class="btn">LinkedIn</a>
   </div>
 </div>
 
 <section id="about">
   <h2>About Me</h2>
   <p>
-I am a multi-skilled freelancer who builds modern web applications, creates content, and works on AI-based projects.
-I have experience in web development, backend systems, and research work. I love solving problems and delivering high-quality solutions to clients.
+    I am a multi-skilled freelancer specializing in web development and AI-based projects.
+    I build modern applications, solve real-world problems, and deliver high-quality solutions.
   </p>
 </section>
 
 <section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+
+    <div class="card">
+      <h3>🏠 House Price Prediction</h3>
+      <p>
+        Built a machine learning model using regression algorithms to predict house prices.
+        Applied data preprocessing and improved model accuracy.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>🤖 AI MCQ Generator</h3>
+      <p>
+        Developed an AI-based system to generate MCQs using NLP and automation logic.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>💸 Expense Tracker</h3>
+      <p>
+        Developed a web-based expense tracker to manage daily spending with real-time updates and data storage.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section id="services">
   <h2>Services</h2>
   <div class="projects">
 
     <div class="card">
-      <h3>AI MCQ Generator</h3>
-      <p>Generate MCQs using AI logic.</p>
+      <h3>Web Development</h3>
+      <p>Modern responsive websites using latest technologies.</p>
     </div>
 
     <div class="card">
-      <h3>E-Commerce Website</h3>
-      <p>Full shopping system with features.</p>
+      <h3>AI Solutions</h3>
+      <p>Custom AI-based tools and automation systems.</p>
     </div>
 
     <div class="card">
-      <h3>Research Work</h3>
-      <p>G Technology research and analysis.</p>
-    </div>
-
-    <div class="card">
-      <h3>Content Writing</h3>
-      <p>LinkedIn posts, blogs & documentation.</p>
-    </div>
-
-    <div class="card">
-      <h3>Bug Fixing</h3>
-      <p>Fixing errors in web & coding projects.</p>
-    </div>
-
-    <div class="card">
-      <h3>Portfolio Design</h3>
-      <p>Modern responsive portfolio websites.</p>
+      <h3>Training</h3>
+      <p>Providing training in aptitude, coding basics, and problem-solving skills.</p>
     </div>
 
   </div>
@@ -232,21 +235,53 @@ I have experience in web development, backend systems, and research work. I love
     <span>MongoDB</span>
     <span>HTML & CSS</span>
     <span>API Development</span>
-    <span>Content Writing</span>
-    <span>Research</span>
-    <span>Problem Solving</span>
+    <span>Machine Learning</span>
+    <span>Strong Aptitude</span>
   </div>
 </section>
 
-<section id="contact" class="contact">
+<section>
+  <h2>Achievements</h2>
+  <div class="skills">
+    <span>🎖 NCC A Certificate</span>
+    <span>🤝 Teamwork Skills</span>
+    <span>👩‍🏫 Available for Trainer Role</span>
+  </div>
+</section>
+
+<section id="contact">
   <h2>Contact</h2>
   <p>Email: vanshikabansal3107@gmail.com</p>
-  <p>Available for Freelance Work 💼</p>
+  <p>Available for Freelance, Resume & Portfolio Making 💼</p>
 </section>
 
 <footer>
-  <p>© 2026 Vanshika | Designed with ❤️</p>
+  <p>© 2026 Vanshika</p>
 </footer>
+
+<!-- Typing Script -->
+<script>
+const text = ["Web Developer", "AI Enthusiast", "Freelancer"];
+let i = 0, j = 0;
+
+function type() {
+  if (j < text[i].length) {
+    document.getElementById("typing").innerHTML += text[i][j];
+    j++;
+    setTimeout(type, 80);
+  } else {
+    setTimeout(() => {
+      document.getElementById("typing").innerHTML = "";
+      j = 0;
+      i = (i + 1) % text.length;
+      type();
+    }, 1000);
+  }
+}
+
+type();
+</script>
 
 </body>
 </html>
+
